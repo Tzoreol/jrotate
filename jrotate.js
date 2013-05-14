@@ -58,7 +58,13 @@
 			
 			if(d2r(i) >= Math.abs(rotation))
 			{
-				console.log((angle + d2r(it)));
+				//Rotate to rotation then stop
+				var cos = round(Math.cos(angle + rotation)).toString();
+				var sin = round(Math.sin(angle + rotation)).toString();
+
+				var matrix = 'matrix(' + cos + ',' + sin + ',' + (-sin) + ',' + cos + ',0,0)';
+				$(elt).css('transform', matrix);
+				
 				clearInterval(timer);
 			}
 		}
