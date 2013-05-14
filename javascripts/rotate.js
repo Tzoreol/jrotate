@@ -72,7 +72,7 @@
 			
 			//Getting actual transformation
 			var matrix = $(this).css('transform');
-			alert(matrix);
+			alert($(this));
 			
 			if(matrix != 'none')
 			{
