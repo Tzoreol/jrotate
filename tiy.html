@@ -34,28 +34,27 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>What is it?</h3>
-
-<p>
-  In jQuery, you can animate a moving element, from left to right, for example, but it is impossible to animate rotation. <br />
-  Now, with jRotate, your rotation is no longer instantaneous, but degree by degree. Just set the angle you want to add (or remove), the duration of the animation and it's on !
-</p>
-
+        
 <h3>Try it yourself</h3>
+<h4>Code</h4>
 
 <div id="code">
-  <textarea>
+  <textarea rows="4" cols="50">
     <html>
     <head>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
       <script src="javascripts/rotate.js" type="text/javascript"></script>
-      <script src="javascripts/main.js" type="text/javascript"></script>
     </head>
     <body>
       <div id="rotate">
         I can rotate
       </div>
       <input type="button" value="Test" />
+      <script>
+        $('input[type=button]').click(function() {
+            $('#rotate').rotate(360, 3000);
+          });
+      </script>
     </body>
   </html>
   </textarea>
@@ -66,13 +65,17 @@
     <head>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
       <script src="javascripts/rotate.js" type="text/javascript"></script>
-      <script src="javascripts/main.js" type="text/javascript"></script>
     </head>
     <body>
       <div id="rotate">
         I can rotate
       </div>
       <input type="button" value="Test" />
+      <script>
+        $('input[type=button]').click(function() {
+            $('#rotate').rotate(360, 3000);
+          });
+      </script>
     </body>
   </html>
 </div>
