@@ -72,7 +72,7 @@
 			
 			//Getting actual transformation
 			var matrix = $(this).css('transform');
-			alert(matrix);
+			alert(typeOf(matrix) == 'undefined');
 			if(matrix != 'undefined')
 			{
 				//Change string to get only values
