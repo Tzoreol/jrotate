@@ -4,7 +4,7 @@ $(document).ready(function() {
   });
   
   $('input[type=submit]').click(function() {
-    var html = $('#code textarea').html();
+    var html = $('#code textarea').text();
     
     alert(html);
     
