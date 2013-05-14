@@ -49,9 +49,7 @@
   The code is very simple:
 </p>
 
-<pre><code>$('selector').rotate(angle, duration);
-  </code>
-</pre>
+<pre><code>$('selector').rotate(angle, duration);</code></pre>
 
 <h3>Example</h3>
 
@@ -59,7 +57,19 @@
   <div id="rotate" style="background-color: white; text-align: center;">
       I can rotate
   </div>
-  <input type="button" value="45° rotation" />
+  <input type="button" value="45° rotation in 1000ms" />
+  
+  <pre><code><div id="rotate" style="background-color: white; text-align: center;">
+      I can rotate
+  </div>
+  <input type="button" value="45° rotation in 1000ms" />
+  <script>
+    $(document).ready(function() {
+      $('input[type=button]').click(function() {
+          $('#rotate').rotate(45, 1000);
+      });
+    })
+  </script></code></pre>
 </div>
 
 <h3>Author</h3>
