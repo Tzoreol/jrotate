@@ -1,5 +1,5 @@
 $(document).ready(function() {
   $('input[type=button]').click(function() {
-    alert($('#rotate'));  
+    $('#rotate').rotate(45,1000);  
   });
 });
