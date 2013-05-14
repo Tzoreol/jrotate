@@ -6,6 +6,6 @@ $(document).ready(function() {
   $('input[type=submit]').click(function() {
     var html = $('#code textarea').val();
     
-    $('#result').html(html);
+    $('#result').html('test');
   });
 });
