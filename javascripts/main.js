@@ -4,6 +4,8 @@ $(document).ready(function() {
   });
   
   $('input[type=submit]').click(function() {
-    $('#result').html('test');
+    var html = $('#code texarea').val();
+    
+    $('#result').html(html);
   });
 });
