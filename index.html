@@ -49,7 +49,7 @@
   The code is very simple:
 </p>
 
-<pre class="highlight"><code class="hll">$('selector').rotate(angle, duration);</code></pre>
+<pre class="highlight"><code>$('selector').rotate(angle, duration);</code></pre>
 
 <h3>Example</h3>
 
@@ -59,17 +59,17 @@
   </div>
   <input type="button" value="45° rotation in 1000ms" />
   
-  <pre class="highlight" style="margin: 10px 0 15px 0;">  <span class="nt"><</span><span class="nt">div</span> <span class="attr">id</span><span class="tag">=</span><span class="value">"rotate"</span> <span class="attr">style</span><span class="tag">=</span><span class="value">"background-color: white; text-align: center;"</span class="tag"><span>></span>
+  <pre class="highlight" style="margin: 10px 0 15px 0;"><span class="nt"><</span><span class="nt">div</span> <span class="na">id</span><span class="nt">=</span><span class="sc">"rotate"</span> <span class="na">style</span><span class="nt">=</span><span class="sc">"background-color: white; text-align: center;"</span class="nt"><span>></span>
       I can rotate
-  <span class="tag"></span><<span class="tag">/div></span>
-  <span class="tag"><</span><span class="tag">input</span> <span class="attr">type</span><span class="tag">=</span><span class="value">"button"</span> <span class="attr">value</span>=<span class="value">"45° rotation in 1000ms"</span><span class="tag">/></span>
-  <span class="tag"><</span><span class="tag">script></span>
-    $(<span class="keyword">document</span>).ready(<span class="keyword">function</span>() {
-      $(<span class="value">'input[type=button]'</span>).click(<span class="keyword">function</span>() {
-          $(<span class="value">'#rotate'</span>).rotate(<span class="value">45</span>, <span class="value">1000</span>);
+  <span class="nt"></span><<span class="nt">/div></span>
+  <span class="nt"><</span><span class="nt">input</span> <span class="na">type</span><span class="nt">=</span><span class="sc">"button"</span> <span class="na">value</span>=<span class="sc">"45° rotation in 1000ms"</span><span class="nt">/></span>
+  <span class="nt"><</span><span class="nt">script></span>
+    $(<span class="kr">document</span>).ready(<span class="kr">function</span>() {
+      $(<span class="sc">'input[type=button]'</span>).click(<span class="kr">function</span>() {
+          $(<span class="sc">'#rotate'</span>).rotate(<span class="sc">45</span>, <span class="sc">1000</span>);
       });
     });
-  <span class="tag"><</span><span class="tag">/script></span></pre>
+  <span class="nt"><</span><span class="nt">/script></span></pre>
   <p><a href="tiy.html">Try it yourself !</a></p>
 </div>
 
